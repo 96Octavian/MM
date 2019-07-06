@@ -35,3 +35,5 @@ if __name__ == '__main__':
             print("Scelta non valida")
 
         print(info)
+
+    print("Addio!")
