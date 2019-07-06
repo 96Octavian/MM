@@ -13,10 +13,12 @@
 #
 # modulo.py
 #   nome_singolo(filename):
+#     apri prestiti.txt
 #     scrivi sul file chiamato filename quelli che hanno un solo nome
 #     Risultato: Luca;Rossi;110
 #
 #   nome_doppio(altro_filename):
+#     apri prestiti.txt
 #     scrivi sul file chiamato altro_filename quelli che hanno due nomi
 #     Risultato: Maria Antonietta;Spadorcia;120
 #

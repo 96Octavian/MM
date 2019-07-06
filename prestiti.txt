@@ -1,0 +1,20 @@
+Billy;Batson;350
+Bruce;Banner;1500
+John Jonah;Jameson;3000
+Lex;Luthor;5500
+Lois;Lane;1200
+Otto;Octavius;3750
+Peter;Parker;120
+Reed;Richards;2900
+Scott;Summers;3100
+Stephen;Strange;4500
+Wally;West;750
+Warren;Worthington;1000
+Wade Woodrow;Wilson;980
+Matt;Murdoch;900
+Ronald Ryan;Reynolds;1150
+Pepper;Potts;1320
+Sue;Storm;2700
+Bucky;Barnes;500
+Harold Happy;Hogan;1300;
+Dum Dum;Dugan;900
