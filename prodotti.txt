@@ -1,0 +1,14 @@
+Maglietta;25
+Maglione;20;
+Giacca;60
+Stivali;35
+Stivale;20
+L'altro stivale;20
+Scarpe;34
+Calze;5
+Guanti;5
+Gonna;57
+Completo;90
+Cappello elegante;70
+Cappellino da baseball;9
+Cappellino da baseball autografato;75
