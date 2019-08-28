@@ -31,10 +31,10 @@ def massimo(lista):
     return n_max
 
 
-def numeri():
+def numero():
     """Elabora l'input"""
     numeri = input("Inserisci una serie di numeri separati da spazi:\n")
-    numeri = numeri.split(" ")
+    numeri = numeri.split()
     numeri = list(map(int, numeri))
     print(
         f'Massimo: {massimo(numeri)}, somma: {somma(numeri)}, inversa: {inversa(numeri)}, ordinata: {ordine_decrescente(numeri)}')
@@ -47,4 +47,4 @@ if __name__ == '__main__':
     Input: "4 7 23"
     Output: Max: 23, somma: 34, inversa: 23 7 4, ordinata: 4 7 23
     Hint: tante funzioni"""
-    numeri()
+    numero()

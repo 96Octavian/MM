@@ -1,1 +1,7 @@
 venv/
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/MM.iml
+/.idea/modules.xml
+/.idea/vcs.xml

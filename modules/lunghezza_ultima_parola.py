@@ -1,13 +1,28 @@
 def ultima_parola(nome_file):
     try:
-        f = open(nome_file, "r")
+        f = open("../files/" + nome_file, "r")
         ultime_parole = []
-        for line in f:
-            ultime_parole.append(line.split(" ")[-1])
-        lunghezza = [len(x) for x in ultime_parole]
-        return lunghezza
+        lista = []
+        for i in f:
+            lista.append(i)
+        a = map(parola,lista)
+        a = map(lunghezza, a)
+        return a
     except FileNotFoundError:
         print(f'Could not find file {nome_file}')
+
+
+
+def parola(riga):
+    parola = riga.split(" ")
+    return parola[-1]
+
+def lunghezza(parola):
+    a = 0
+    for i in parola:
+        a = a + 1
+    return a
+
 
 if __name__ == "__main__":
     """

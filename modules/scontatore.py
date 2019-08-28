@@ -22,7 +22,7 @@ def sconto(prezzo_iniziale):
 def stampa_sconto(nome_file):
     """Calcola e stampa il risultato"""
     try:
-        f = open(nome_file, "r")
+        f = open("../files/" + nome_file, "r")
         for line in f:
             try:
                 prodotto, prezzo = line.split(";")
