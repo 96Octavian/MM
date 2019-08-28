@@ -29,12 +29,11 @@
 # stampa la somma di entrambi
 
 
-import modulo_compito
-
+from modules import primo_o_secondo_nome
 
 if __name__ == '__main__':
-    modulo_compito.nome_singolo("singolo.csv")
-    modulo_compito.nome_doppio("doppio.csv")
+    primo_o_secondo_nome.nome_singolo("singolo.csv")
+    primo_o_secondo_nome.nome_doppio("doppio.csv")
     f = open("singolo.csv")
     somma_singolo = 0
     for line in f:
