@@ -22,7 +22,7 @@
 #     scrivi sul file chiamato altro_filename quelli che hanno due nomi
 #     Risultato: Maria Antonietta;Spadorcia;120
 #
-# Compito.py
+# somma_singolo_e_doppio.py
 # import modulo.py
 # chiama nome_singolo(nome1) e stampa la somma del file nome1
 # chiama nome_doppio(nome2) e stampa la somma del file nome2
@@ -31,18 +31,23 @@
 
 from modules import primo_o_secondo_nome
 
-if __name__ == '__main__':
-    primo_o_secondo_nome.nome_singolo("singolo.csv")
-    primo_o_secondo_nome.nome_doppio("doppio.csv")
-    f = open("singolo.csv")
+
+def somma_file():
+    primo_o_secondo_nome.nome_singolo("../files/" + "singolo.csv")
+    primo_o_secondo_nome.nome_doppio("../files/" + "doppio.csv")
+    f = open("../files/singolo.csv")
     somma_singolo = 0
     for line in f:
         somma_singolo += int(float(line.split(";")[2].strip()))
     print(f'La somma del file singolo.csv è {somma_singolo}')
     f.close()
-    f = open("doppio.csv")
+    f = open("../files/doppio.csv")
     somma_doppio = 0
     for line in f:
         somma_doppio += int(float(line.split(";")[2].strip()))
     print(f'La somma del file doppio.csv è {somma_doppio}')
     print(f'Il totale è {somma_singolo + somma_doppio}')
+
+
+if __name__ == '__main__':
+    somma_file()

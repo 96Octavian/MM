@@ -1,17 +1,16 @@
-import Compito1
-import Compito2
-import Compito3
-import CompitoVacanze
+import scrivi_csv
+import contatore
+import iniziali
 
 if __name__ == '__main__':
     print("RACCOGLITORE DI COMPITI")
 
     choice = -1
     funz = [
-        Compito1.chiedi_nome,
-        Compito1.crea_csv_ma_migliore,
-        Compito2.chiedi_nome,
-        Compito3.chiedi_lista
+        scrivi_csv.chiedi_nome,
+        scrivi_csv.crea_csv_ma_migliore,
+        contatore.chiedi_nome,
+        iniziali.chiedi_lista
     ]
     info = (
         '\n0 - crea_csv\n'

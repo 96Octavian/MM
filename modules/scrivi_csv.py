@@ -2,8 +2,8 @@ import csv
 
 
 def crea_csv(filename):
-	file_da_scrivere = open("output.csv", "w")
-	file_da_leggere = open(filename, "r")
+	file_da_scrivere = open("../files/output.csv", "w")
+	file_da_leggere = open("../files/" + filename, "r")
 	scrittore = csv.writer(file_da_scrivere, delimiter=',')
 	while True:
 		scrivere = []
@@ -20,8 +20,8 @@ def crea_csv(filename):
 
 def crea_csv_ma_migliore(filename):
 	try:
-		file_da_scrivere = open("output_ma_migliore.csv", "w", newline='')
-		file_da_leggere = open(filename, "r")
+		file_da_scrivere = open("../files/output_ma_migliore.csv", "w", newline='')
+		file_da_leggere = open("../files/" + filename, "r")
 	except FileNotFoundError:
 		print("Nome file sbagliato")
 		return 1
@@ -40,16 +40,16 @@ def crea_csv_ma_migliore(filename):
 	file_da_leggere.close()
 
 
-def chiedi_nome():
+def chiedi_nome_file():
 	filename = input("Che file devo aprire? ")
-	crea_csv(filename)
+	crea_csv("../files/" + filename)
 
 
-def chiedi_nome_ma_migliore():
+def chiedi_nome_file_ma_migliore():
 	filename = input("Che file devo aprire? ")
-	crea_csv_ma_migliore(filename)
+	crea_csv_ma_migliore("../files/" + filename)
 
 
 if __name__ == '__main__':
-	crea_csv("Dati")
-	crea_csv_ma_migliore("Dati")
+	crea_csv("../files/" + "Dati")
+	crea_csv_ma_migliore("../files/" + "Dati")

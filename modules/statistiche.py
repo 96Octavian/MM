@@ -15,7 +15,7 @@ def stampagrafico(listaparola):
 
 
 def main(nomefile):
-    f = open("../files/" + nomefile, "r")
+    f = open(nomefile, "r")
     lista = []
     for i in f:
         lista.append(contaparola(i))
@@ -28,4 +28,4 @@ if __name__ == '__main__':
     """
     Trova per ogni riga la parola più lunga e stampa in un grafico la lunghezza
     """
-    main("parole.txt")
+    main("../files/" + "parole.txt")

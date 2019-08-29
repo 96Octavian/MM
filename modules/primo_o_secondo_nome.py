@@ -1,8 +1,8 @@
 def unica(filename, nomefile):
     try:
         f = open("../files/prestito.csv", "r")
-        output = open("../files/" + filename, "w")
-        output2 = open("../files/" + nomefile, "w")
+        output = open(filename, "w")
+        output2 = open(nomefile, "w")
         lista = []
         lista2 = []
         for line in f:
@@ -33,7 +33,7 @@ def unica(filename, nomefile):
 
 def nome_singolo(filename):
     try:
-        f = open("prestito.csv", "r")
+        f = open("../files/prestito.csv", "r")
         output = open(filename, "w")
         lista = []
         for line in f:
@@ -55,7 +55,7 @@ def nome_singolo(filename):
 
 def nome_doppio(filename):
     try:
-        f = open("prestito.csv", "r")
+        f = open("../files/prestito.csv", "r")
         output = open(filename, "w")
         lista = []
         for line in f:
@@ -81,14 +81,5 @@ if __name__ == '__main__':
     Scrivi quelli con un solo nome in un secondo file con la cifra aumentata del 10% e quelli con il secondo nome con
     la cifra aumentata del 20% in un terzo file
     """
-    nome_singolo("nome_singolo.csv")
-    nome_doppio("nome_doppio.csv")
-
-if __name__ == '__main__':
-    """
-    Apri il file 'prestito.csv' e dividi le righe a seconda che abbiano solo un nome o anche un secondo nome.
-    Scrivi quelli con un solo nome in un secondo file con la cifra aumentata del 10% e quelli con il secondo nome con
-    la cifra aumentata del 20% in un terzo file
-    """
-    nome_singolo("nome_singolo.csv")
-    nome_doppio("nome_doppio.csv")
+    nome_singolo("../files/" + "nome_singolo.csv")
+    nome_doppio("../files/" + "nome_doppio.csv")

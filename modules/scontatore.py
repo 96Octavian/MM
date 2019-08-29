@@ -22,7 +22,7 @@ def sconto(prezzo_iniziale):
 def stampa_sconto(nome_file):
     """Calcola e stampa il risultato"""
     try:
-        f = open("../files/" + nome_file, "r")
+        f = open(nome_file, "r")
         for line in f:
             try:
                 prodotto, prezzo = line.split(";")
@@ -44,4 +44,4 @@ if __name__ == '__main__':
     Output: "Maglietta: 20 - 2 = 18"
     Hint: funzione sconto(prezzo) ritorna lo sconto"""
 
-    stampa_sconto('prodotti.csv')
+    stampa_sconto("../files/" + 'prodotti.csv')

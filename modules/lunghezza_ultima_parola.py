@@ -1,6 +1,6 @@
 def ultima_parola(nome_file):
     try:
-        f = open("../files/" + nome_file, "r")
+        f = open(nome_file, "r")
         ultime_parole = []
         lista = []
         for i in f:
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     """
     Costruisci una lista con la lunghezza delle ultime parole di ogni riga nel file
     """
-    print(f'Le lunghezze dell\'ultima parola di ogni riga sono {ultima_parola("parole.txt")}')
+    print(f'Le lunghezze dell\'ultima parola di ogni riga sono {ultima_parola("../files/" + "parole.txt")}')

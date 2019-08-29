@@ -7,13 +7,13 @@ def massimoimporto(file1, file2):
 
     lista = []
 
-    f = open("../files/" + file1, "r")
+    f = open(file1, "r")
 
     for i in f:
         lista.append(i.rstrip().split(";")[2])
     max_singol = numeri.massimo(lista)
 
-    f = open("../files/" + file2, "r")
+    f = open(file2, "r")
     max_doppi = 0
     lista = []
     for i in f:
@@ -29,5 +29,5 @@ if __name__ == '__main__':
     Definisci una funzione che usando primo_o_secondo_nome.py e numeri.py restituisca l'importo massimo per entrambi
     i file
     """
-    max_singolo, max_doppio = massimoimporto("nomefile", "altronomefile")
+    max_singolo, max_doppio = massimoimporto("../files/" + "nomefile", "../files/" + "altronomefile")
     print(f'Per i nomi sigoli il massimo è {max_singolo}, per i nomi doppi è {max_doppio}')

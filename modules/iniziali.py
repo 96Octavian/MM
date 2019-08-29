@@ -6,9 +6,9 @@ def iniziali(lista):
     c=[]
     for i in lista:
         if len(i) > 8:
-            c.append(i)
-    for i in c:
-        print (i[0])
+            c.append(i[0])
+    return c
+
 
 def chiedi_lista():
     lista = []
@@ -16,4 +16,9 @@ def chiedi_lista():
     while not lista or input_string:
         input_string = input("Inserisci una parola: ")
         if input_string: lista.append(str(input_string))
-    iniziali(lista)
+    return iniziali(lista)
+
+
+if __name__ == '__main__':
+    inizials = chiedi_lista()
+    print(f'Le iniziali delle parole con più di 8 lettere sono: {inizials or "nessuna"}')

@@ -9,7 +9,7 @@ def unisciliste(lista1, lista2):
 
 def main(nomefile):
     lista = []
-    f = open("../files/" + nomefile, "r")
+    f = open(nomefile, "r")
     for i in f:
         a = i.split(";")
         if int(a[1]) > 500:
@@ -18,7 +18,7 @@ def main(nomefile):
 
 
 def main2 (nomefile):
-    f = open("../files/" + nomefile, "r")
+    f = open(nomefile, "r")
     lista = []
     for i in f:
         lista.append(i)
